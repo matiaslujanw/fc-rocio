@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5eadb" />
+    <meta name="description" content="Una sorpresa de cumpleaños para Rocío" />
+    <title>Feliz cumpleaños, Rocío ♡</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="experience" aria-live="polite">
+      <section class="screen screen--cover is-active" data-screen="cover">
+        <div class="paper-texture" aria-hidden="true"></div>
+        <div class="cover__content">
+          <p class="eyebrow">Una sorpresa para ti</p>
+          <h1>Feliz<br /><em>cumpleaños</em></h1>
+
+          <div class="gift" aria-hidden="true">
+            <span class="gift__spark gift__spark--one">✦</span>
+            <span class="gift__spark gift__spark--two">✧</span>
+            <span class="gift__bow gift__bow--left"></span>
+            <span class="gift__bow gift__bow--right"></span>
+            <span class="gift__lid"></span>
+            <span class="gift__box"></span>
+            <span class="gift__ribbon"></span>
+          </div>
+
+          <p class="cover__note">Preparé algo especial para vos</p>
+          <button class="primary-button" id="startButton" type="button">
+            <span>Tocar para comenzar</span>
+            <span aria-hidden="true">♡</span>
+          </button>
+        </div>
+        <div class="botanical botanical--left" aria-hidden="true">❦</div>
+        <div class="botanical botanical--right" aria-hidden="true">❦</div>
+      </section>
+
+      <section class="screen screen--heart" data-screen="heart" aria-hidden="true">
+        <div class="paper-texture" aria-hidden="true"></div>
+        <div class="heart-stage">
+          <p class="eyebrow">Esto es para vos</p>
+          <h2>Rocío</h2>
+          <p class="heart-instruction" id="heartInstruction">Apretá el corazón</p>
+
+          <div class="heart-zone">
+            <button class="heart-button" id="heartButton" type="button" aria-label="Apretar el corazón">
+              <span class="heart-shape" aria-hidden="true">♥</span>
+            </button>
+            <div class="heart-particles" id="heartParticles" aria-hidden="true"></div>
+          </div>
+
+          <div class="progress" aria-label="Progreso de la sorpresa">
+            <div class="progress__track">
+              <span class="progress__fill" id="progressFill"></span>
+            </div>
+            <span class="progress__label" id="progressLabel">0%</span>
+          </div>
+          <p class="heart-hint">Cada latido te acerca un poquito más…</p>
+        </div>
+      </section>
+
+      <section class="screen screen--memory" data-screen="memory" aria-hidden="true">
+        <div class="paper-texture" aria-hidden="true"></div>
+        <div class="memory__content">
+          <header class="memory__header">
+            <span class="tiny-heart" aria-hidden="true">♡</span>
+            <h2>Hoy es el cumpleaños<br />de mi persona favorita</h2>
+            <p>ROCÍO</p>
+          </header>
+
+          <article class="polaroid" aria-label="Una foto especial de nosotros">
+            <div class="polaroid__photo-wrap">
+              <img src="public/foto-real.jpeg" alt="Rocío y su pareja juntos en la playa al atardecer" />
+              <span class="photo-heart" aria-hidden="true">♡</span>
+            </div>
+            <div class="polaroid__caption">
+              <span aria-hidden="true">✦</span>
+              <span class="bunting" aria-hidden="true">♥︎ · ♥︎ · ♥︎</span>
+              <span aria-hidden="true">✦</span>
+            </div>
+          </article>
+
+          <div class="flourish" aria-hidden="true">〜</div>
+
+          <button class="envelope" id="envelopeButton" type="button" aria-label="Abrir tu regalo">
+            <span class="envelope__back"></span>
+            <span class="envelope__paper">Hay algo acá para vos…</span>
+            <span class="envelope__flap"></span>
+            <span class="envelope__front"></span>
+            <span class="envelope__seal">Abrime</span>
+          </button>
+          <p class="tap-note">Tocá el sello para descubrirlo</p>
+          <p class="made-with-love">HECHO CON AMOR</p>
+        </div>
+      </section>
+
+      <section class="screen screen--letter" data-screen="letter" aria-hidden="true">
+        <div class="paper-texture" aria-hidden="true"></div>
+        <div class="confetti" id="confetti" aria-hidden="true"></div>
+        <div class="letter__content">
+          <p class="letter__mini-title">Para Rocío</p>
+          <article class="letter-card">
+            <div class="letter-card__ornament" aria-hidden="true">♥︎ &nbsp; 🎂 &nbsp; ♥︎</div>
+            <p>Hay personas que llegan<br />y lo cambian todo.</p>
+            <p>
+              Pienso que ni el destino, escribiendo la mejor de las historias,
+              habría creado a alguien tan especial como vos.
+            </p>
+            <p>
+              Hoy celebro tu risa, tu luz y tu forma de hacerme sentir en casa.
+              Que la vida te siga mostrando lo increíble que sos y te devuelva
+              multiplicado todo el amor que das.
+            </p>
+            <p>
+              Gracias por cada momento, cada aventura y por hacer que hasta los
+              días más simples se sientan especiales.
+            </p>
+            <p class="letter-card__wish">Feliz cumpleaños, mi amor.</p>
+            <p class="letter-card__signature">Te amo ♡</p>
+          </article>
+          <button class="text-button" id="replayButton" type="button">Volver a verlo</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
